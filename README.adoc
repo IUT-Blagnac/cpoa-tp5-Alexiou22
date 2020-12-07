@@ -102,18 +102,18 @@ endif::[]
 //------------------------------------ 
 == {assignment}
 
-{lastName}:: BRUEL
+{lastName}:: OYSEL
 
-{firstName}:: Jean-Michel
+{firstName}:: Alexia
 
 {group} #::
 
 [%interactive]
-- [X] {Enseignants}
+- [ ] {Enseignants}
 - [ ] 1
 - [ ] 2
 - [ ] 3
-- [ ] 4
+- [X] 4
 - [ ] Innopolis
 
 //------------------------------------ 
