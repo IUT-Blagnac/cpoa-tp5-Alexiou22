@@ -73,16 +73,6 @@ ChangeListener {
 		constraints.gridy = 0;
 		this.getContentPane().add(sliderPanel, constraints);
 
-		// Layout code
-		constraints.weightx = 1.0;
-		constraints.weighty = 1.0;
-		constraints.gridx = 1;
-		constraints.gridy = 0;
-
-		//Code pour le rond
-		//sliderPanel.add();
-
-
 
 		// the bar chart will be drawn over this panel
 		this.getContentPane().add(new JPanel(), constraints);
@@ -178,27 +168,7 @@ ChangeListener {
 
 	}
 
-	public void paint2(Graphics g, Integer[] data) {
-		super.paint(g);
-		int radius = 100;
 
-		//first compute the total number of students
-		double total = 0.0;
-		for (int i = 0; i < data.length; i++) {
-			total += data[i];
-		}
-		//if total == 0 nothing to draw
-		if (total != 0) {
-			double startAngle = 0.0;
-			for (int i = 0; i < data.length; i++) {
-				double ratio = (data[i] / total) * 360.0;
-				//draw the arc
-				g.setColor(LayoutConstants.courseColours[i%LayoutConstants.courseColours.length]);
-				g.fillArc(LayoutConstants.xOffset, LayoutConstants.yOffset + 300, 2 * radius, 2 * radius, (int) startAngle, (int) ratio);
-				startAngle += ratio;
-			}
-		}
-	}
 
 
 	/**
