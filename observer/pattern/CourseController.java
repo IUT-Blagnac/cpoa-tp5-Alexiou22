@@ -158,7 +158,7 @@ public class CourseController extends JPanel implements Observer, ChangeListener
 		JFrame frame = new JFrame("Observer Pattern");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new GridBagLayout());
-		//frame.setResizable(false);
+		frame.setResizable(false);
 
 		GridBagConstraints constraints = new GridBagConstraints();
 		constraints.fill = GridBagConstraints.BOTH;
